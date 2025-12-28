@@ -7,5 +7,6 @@ urlpatterns = [
     path('dash', DashboardView.as_view(), name='dash'),
     path('admin_dash', AdminDashView.as_view(), name='admin_dash'), 
     path('signup', SignupView.as_view(), name='signup'), 
+    path('debts', DebtorsView.as_view(), name='debts'), 
 ]
 

@@ -80,3 +80,8 @@ class SignupView(View):
         messages.success(request, 'Account created successfully. Please log in.')
         return redirect('login')
         
+class DebtorsView(View, LoginRequiredMixin):
+    login_url = 'login'
+
+    def get(self, request):
+        return render(request, 'debts.html')
